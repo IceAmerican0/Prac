@@ -1,7 +1,5 @@
-# Prac
+# <div align="center"> 403 Error push 오류 </div>
 </br>
-
-<div align="center"> 403 Error push 오류 </div>
 
 GitHub - Setting - Developer Setting - Token 만료 확인 - 재생성
 

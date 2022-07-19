@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  collectionViewPrac
+//  NoStoryBoard
 //
-//  Created by 박성준 on 2022/07/18.
+//  Created by 박성준 on 2022/07/19.
 //
 
 import UIKit

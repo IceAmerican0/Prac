@@ -34,7 +34,12 @@ class ViewController: UIViewController {
         nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         nextButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
-        
+        self.nextButton.addTarget(self, action: #selector(moveToNextView), for: .touchUpInside)
+    }
+    
+    @objc func moveToNextView() {
+        let nextViewController = LoginViewController()
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 
 

@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
     }
     
     func labelLayout() {
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "LoginViewController"
         label.textColor = .white
         label.sizeToFit()

@@ -30,7 +30,6 @@ class ViewController: UIViewController {
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         nextButton.setTitle("NEXT", for: .normal)
         nextButton.layer.cornerRadius = 10
-        nextButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -300).isActive = true
         nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         nextButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
@@ -43,5 +42,16 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate {
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = self
+    }
+
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1
+    }
 }
 

@@ -13,6 +13,7 @@
 		697134A32886E50300ACE7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697134A22886E50300ACE7FB /* Assets.xcassets */; };
 		697134A62886E50300ACE7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697134A42886E50300ACE7FB /* LaunchScreen.storyboard */; };
 		697134AE28883D4B00ACE7FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697134AD28883D4B00ACE7FB /* LoginViewController.swift */; };
+		697134B1288EBD3700ACE7FB /* PopGesture.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697134B0288EBD3700ACE7FB /* PopGesture.swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		697134A52886E50300ACE7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		697134A72886E50300ACE7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697134AD28883D4B00ACE7FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		697134B0288EBD3700ACE7FB /* PopGesture.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGesture.swift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		697134982886E50200ACE7FB /* NoStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				697134AF288EBD1E00ACE7FB /* Extensions */,
 				697134992886E50200ACE7FB /* AppDelegate.swift */,
 				6971349B2886E50200ACE7FB /* SceneDelegate.swift */,
 				6971349D2886E50200ACE7FB /* ViewController.swift */,
+				697134AD28883D4B00ACE7FB /* LoginViewController.swift */,
 				697134A22886E50300ACE7FB /* Assets.xcassets */,
 				697134A42886E50300ACE7FB /* LaunchScreen.storyboard */,
 				697134A72886E50300ACE7FB /* Info.plist */,
-				697134AD28883D4B00ACE7FB /* LoginViewController.swift */,
 			);
 			path = NoStoryBoard;
+			sourceTree = "<group>";
+		};
+		697134AF288EBD1E00ACE7FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				697134B0288EBD3700ACE7FB /* PopGesture.swift.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				697134AE28883D4B00ACE7FB /* LoginViewController.swift in Sources */,
 				6971349E2886E50200ACE7FB /* ViewController.swift in Sources */,
+				697134B1288EBD3700ACE7FB /* PopGesture.swift.swift in Sources */,
 				6971349A2886E50200ACE7FB /* AppDelegate.swift in Sources */,
 				6971349C2886E50200ACE7FB /* SceneDelegate.swift in Sources */,
 			);

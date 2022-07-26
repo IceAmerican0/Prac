@@ -14,6 +14,7 @@
 		697134A62886E50300ACE7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697134A42886E50300ACE7FB /* LaunchScreen.storyboard */; };
 		697134AE28883D4B00ACE7FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697134AD28883D4B00ACE7FB /* LoginViewController.swift */; };
 		697134B1288EBD3700ACE7FB /* PopGesture.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697134B0288EBD3700ACE7FB /* PopGesture.swift.swift */; };
+		AA14CF1058B5D1FC3FD84DF9 /* Pods_NoStoryBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AA138E5DE173D309F4104F /* Pods_NoStoryBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		697134A72886E50300ACE7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697134AD28883D4B00ACE7FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		697134B0288EBD3700ACE7FB /* PopGesture.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGesture.swift.swift; sourceTree = "<group>"; };
+		A54A137CABD3B64114F5D30E /* Pods-NoStoryBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoStoryBoard.debug.xcconfig"; path = "Target Support Files/Pods-NoStoryBoard/Pods-NoStoryBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		C03CBA534946C3F6C8BE7B40 /* Pods-NoStoryBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoStoryBoard.release.xcconfig"; path = "Target Support Files/Pods-NoStoryBoard/Pods-NoStoryBoard.release.xcconfig"; sourceTree = "<group>"; };
+		F3AA138E5DE173D309F4104F /* Pods_NoStoryBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoStoryBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA14CF1058B5D1FC3FD84DF9 /* Pods_NoStoryBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144A9F9BC76CF38BD0A10F6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A54A137CABD3B64114F5D30E /* Pods-NoStoryBoard.debug.xcconfig */,
+				C03CBA534946C3F6C8BE7B40 /* Pods-NoStoryBoard.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6971348D2886E50200ACE7FB = {
 			isa = PBXGroup;
 			children = (
 				697134982886E50200ACE7FB /* NoStoryBoard */,
 				697134972886E50200ACE7FB /* Products */,
+				144A9F9BC76CF38BD0A10F6F /* Pods */,
+				800809BFAAF0598E6FB41D79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +95,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		800809BFAAF0598E6FB41D79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3AA138E5DE173D309F4104F /* Pods_NoStoryBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 697134AA2886E50300ACE7FB /* Build configuration list for PBXNativeTarget "NoStoryBoard" */;
 			buildPhases = (
+				213C940831A831597C1631A0 /* [CP] Check Pods Manifest.lock */,
 				697134922886E50200ACE7FB /* Sources */,
 				697134932886E50200ACE7FB /* Frameworks */,
 				697134942886E50200ACE7FB /* Resources */,
+				D50B5D433A4D9D96729F10AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		213C940831A831597C1631A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoStoryBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D50B5D433A4D9D96729F10AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoStoryBoard/Pods-NoStoryBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoStoryBoard/Pods-NoStoryBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoStoryBoard/Pods-NoStoryBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		697134922886E50200ACE7FB /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		697134AB2886E50300ACE7FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54A137CABD3B64114F5D30E /* Pods-NoStoryBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +383,7 @@
 		};
 		697134AC2886E50300ACE7FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03CBA534946C3F6C8BE7B40 /* Pods-NoStoryBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

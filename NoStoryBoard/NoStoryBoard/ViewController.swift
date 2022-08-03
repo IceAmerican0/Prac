@@ -37,8 +37,8 @@ class ViewController: UIViewController {
     }
     
     @objc func moveToNextView() {
-        let nextViewController = LoginViewController()
-        self.navigationController?.pushViewController(nextViewController, animated: true)
+        let tableViewController = TableViewController()
+        self.navigationController?.pushViewController(tableViewController, animated: true)
     }
 
 

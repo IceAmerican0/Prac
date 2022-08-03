@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  TableViewController.swift
 //  NoStoryBoard
 //
 //  Created by 박성준 on 2022/07/20.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LoginViewController: UIViewController {
+class TableViewController: UIViewController {
     
     private var label = UILabel()
     
@@ -29,11 +29,13 @@ class LoginViewController: UIViewController {
     
     func labelLayout() {
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "LoginViewController"
+        label.text = ""
         label.textColor = .white
         label.sizeToFit()
         
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        GetUrlSessionData()
     }
 }

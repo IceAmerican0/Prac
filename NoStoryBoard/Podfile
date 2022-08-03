@@ -7,6 +7,5 @@ target 'NoStoryBoard' do
 
   # Pods for NoStoryBoard
 
-	pod 'RIBs', '~> 0.9'
 
 end

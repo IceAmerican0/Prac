@@ -20,7 +20,7 @@ class TableViewController: UIViewController {
     
     func setupLayout() {
         
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         
         view.addSubview(label)
         

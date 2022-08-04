@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     func setupLayout(){
         view = UIView()
         
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .white
         view.addSubview(nextButton)
         
         buttonLayout()

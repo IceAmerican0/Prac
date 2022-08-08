@@ -7,5 +7,7 @@ target 'NoStoryBoard' do
 
   # Pods for NoStoryBoard
 
+	pod 'FSCalendar'
+
 
 end

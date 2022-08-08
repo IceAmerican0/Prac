@@ -30,7 +30,7 @@ class TableViewController: UIViewController {
     func labelLayout() {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = ""
-        label.textColor = .white
+        label.textColor = .black
         label.sizeToFit()
         
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

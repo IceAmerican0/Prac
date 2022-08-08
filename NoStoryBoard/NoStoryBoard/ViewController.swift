@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     func buttonLayout(){
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         nextButton.setTitle("NEXT", for: .normal)
+        nextButton.setTitleColor(.black, for: .normal)
         nextButton.layer.cornerRadius = 10
         nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         nextButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true

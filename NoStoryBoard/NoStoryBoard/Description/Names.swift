@@ -8,3 +8,5 @@
 import UIKit
 
 var mainViewBounds = UIScreen.main.bounds
+
+var searchDate : String?

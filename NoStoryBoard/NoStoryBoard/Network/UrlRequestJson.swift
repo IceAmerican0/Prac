@@ -9,7 +9,10 @@ import Foundation
 
 func GetUrlSessionData()
 {
-    let urlComponent = URLComponents(string:"https://www.urigolfclub.co.kr//score_api/visit_list.aspx?date=\(setDate())")
+    let urlComponent = URLComponents(string:"https://www.urigolfclub.co.kr//score_api/visit_list.aspx?date=\("".today)")
+    
+    Swift.print("\n==============\nrequestUrl : \(String(describing: urlComponent))\n===================")
+    
     var requestURL = URLRequest(url: (urlComponent?.url)!)
     requestURL.httpMethod = "GET"
     requestURL.setValue("application.x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
@@ -36,11 +39,3 @@ func GetUrlSessionData()
     task.resume()
 }
 
-func setDate() -> String
-{
-    let formatter = DateFormatter()
-    formatter.dateFormat = "yyyyMMdd"
-    let todayDate = formatter.string(from: Date())
-    
-    return todayDate
-}

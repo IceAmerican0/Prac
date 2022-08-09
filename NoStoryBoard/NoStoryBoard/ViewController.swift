@@ -17,7 +17,7 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let fsCalendar = FSCalendar(frame: CGRect(x: 30, y: 20, width: 320, height: 400))
+        let fsCalendar = FSCalendar(frame: CGRect(x: 0, y: 30, width: 320, height: 400))
         fsCalendar.dataSource = self
         fsCalendar.delegate = self
         
@@ -41,10 +41,6 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
     {
         calendar.appearance.headerMinimumDissolvedAlpha = 0.0
         calendar.locale = Locale(identifier: "ko_KR")
-        
-        calendar.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        calendar.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-        
     }
     
     func buttonLayout()
@@ -63,6 +59,14 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
     @objc func moveToNextView() {
         let tableViewController = TableViewController()
         self.navigationController?.pushViewController(tableViewController, animated: true)
+    }
+    
+    func calendarConstraint(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
+        
+        calendar.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        calendar.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        
+        self.view.layoutIfNeeded()
     }
 
 

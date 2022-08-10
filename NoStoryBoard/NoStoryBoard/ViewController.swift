@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import SnapKit
 import FSCalendar
 
-class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
+class ViewController: UIViewController {
     
-    fileprivate weak var calendar : FSCalendar!
+    fileprivate weak var FSCalender : FSCalendar!
     
     private var nextButton = UIButton()
 
@@ -22,7 +23,7 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
         fsCalendar.delegate = self
         
         view.addSubview(fsCalendar)
-        self.calendar = fsCalendar
+        self.FSCalender = fsCalendar
         
         setupLayout()
     }
@@ -31,7 +32,7 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
     {
         self.view.backgroundColor = .white
         self.view.addSubview(nextButton)
-        self.view.addSubview(calendar)
+        self.view.addSubview(FSCalender)
         
         buttonLayout()
         calendarLayout()
@@ -39,19 +40,20 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
     
     func calendarLayout()
     {
-        calendar.appearance.headerMinimumDissolvedAlpha = 0.0
-        calendar.locale = Locale(identifier: "ko_KR")
+        FSCalender.appearance.headerMinimumDissolvedAlpha = 0.0
+        FSCalender.locale = Locale(identifier: "ko_KR")
     }
     
     func buttonLayout()
     {
-        nextButton.translatesAutoresizingMaskIntoConstraints = false
         nextButton.setTitle("NEXT", for: .normal)
         nextButton.setTitleColor(.black, for: .normal)
         nextButton.layer.cornerRadius = 10
         
-        nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
+        nextButton.snp.makeConstraints{ (make) in
+            make.centerX.equalTo(self.view)
+            make.bottomMargin.equalTo(-50)
+        }
         
         self.nextButton.addTarget(self, action: #selector(moveToNextView), for: .touchUpInside)
     }
@@ -59,14 +61,6 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
     @objc func moveToNextView() {
         let tableViewController = TableViewController()
         self.navigationController?.pushViewController(tableViewController, animated: true)
-    }
-    
-    func calendarConstraint(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
-        
-        calendar.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        calendar.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        
-        self.view.layoutIfNeeded()
     }
 
 
@@ -83,3 +77,15 @@ extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate 
     }
 }
 
+extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
+    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
+//        calendarHeight.constant = bounds.height
+        
+        calendar.snp.updateConstraints{ (make) in
+            make.height.equalTo(bounds.height)
+            make.centerX.equalTo(self.view)
+        }
+        
+        self.view.layoutIfNeeded()
+    }
+}

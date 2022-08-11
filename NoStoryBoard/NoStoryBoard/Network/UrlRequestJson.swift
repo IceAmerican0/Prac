@@ -7,9 +7,9 @@
 
 import Foundation
 
-func GetUrlSessionData()
+func GetUrlSessionData(selectedDate : String)
 {
-    let urlComponent = URLComponents(string:"https://www.urigolfclub.co.kr//score_api/visit_list.aspx?date=\("".setTodayDate())")
+    let urlComponent = URLComponents(string:"https://www.urigolfclub.co.kr//score_api/visit_list.aspx?date=\(selectedDate)")
     
     Swift.print("\n==============\nrequestUrl : \(String(describing: urlComponent))\n===================")
     

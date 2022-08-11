@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let fsCalendar = FSCalendar(frame: CGRect(x: 0, y: 30, width: 320, height: 400))
+        let fsCalendar = FSCalendar(frame: CGRect(x: 0, y: 50, width: mainViewBounds.width, height: 300))
         fsCalendar.dataSource = self
         fsCalendar.delegate = self
         
@@ -77,15 +77,25 @@ extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate 
     }
 }
 
-extension ViewController: FSCalendarDelegate, FSCalendarDataSource {
-    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
-//        calendarHeight.constant = bounds.height
-        
-        calendar.snp.updateConstraints{ (make) in
+extension ViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance
+{
+    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) // 레이아웃 조절
+    {
+        self.FSCalender.snp.updateConstraints{ (make) in
             make.height.equalTo(bounds.height)
             make.centerX.equalTo(self.view)
         }
         
         self.view.layoutIfNeeded()
+    }
+    
+    func maximumDate(for calendar: FSCalendar) -> Date
+    { // 오늘 이후 선택 불가
+        return Date()
+    }
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let selectedDate = date.setTodayDate(selected: date)
+        GetUrlSessionData(selectedDate : selectedDate)
     }
 }

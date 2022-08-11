@@ -1,5 +1,5 @@
 //
-//  DateFormatter.swift
+//  Date+Extension.swift
 //  NoStoryBoard
 //
 //  Created by 박성준 on 2022/08/08.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-extension String
+extension Date
 {
-    func setTodayDate() -> String
+    func setTodayDate(selected:Date) -> String
     {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd"
-        let todayDate = formatter.string(from: Date())
+        let date = formatter.string(from: selected)
         
-        return todayDate
+        return date
     }
 }

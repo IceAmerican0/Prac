@@ -15,11 +15,14 @@ struct responseJsonData : Codable {
     var teeoff_no : String? = ""
     var team_name : String? = ""
     
-    var players : Dictionary? = ["":""]
+    var players : [Players]
+    
+}
+
+struct Players : Codable {
     var name : String? = ""
     var memno : String? = ""
     var gmemno : String? = ""
     var gender : String? = ""
     var member : String? = ""
-    
 }

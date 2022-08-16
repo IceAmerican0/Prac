@@ -18,24 +18,45 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addSubview()
+    }
+    
+    func addSubview()
+    {
+        self.view.backgroundColor = .white
+        
+        self.view.addSubview(contentScrollView)
+        contentScrollView.addSubview(nextButton)
+        
         let fsCalendar = FSCalendar(frame: CGRect(x: 0, y: 50, width: mainViewBounds.width, height: 300))
         fsCalendar.dataSource = self
         fsCalendar.delegate = self
         
-        view.addSubview(fsCalendar)
+        contentScrollView.addSubview(fsCalendar)
         self.FSCalender = fsCalendar
         
-        setupLayout()
+        setLayouts()
     }
     
-    func setupLayout()
+    func setLayouts()
     {
-        self.view.backgroundColor = .white
-        self.view.addSubview(nextButton)
-        self.view.addSubview(FSCalender)
-        
-        buttonLayout()
+        scrollViewLayout()
         calendarLayout()
+        buttonLayout()
+    }
+    
+    private let contentScrollView: UIScrollView = {
+        
+        let scrollView = UIScrollView()
+        
+        return scrollView
+    }()
+    
+    func scrollViewLayout()
+    {
+        contentScrollView.snp.makeConstraints{
+            $0.top.bottom.leading.trailing.equalToSuperview()
+        }
     }
     
     func calendarLayout()
@@ -50,9 +71,9 @@ class ViewController: UIViewController {
         nextButton.setTitleColor(.black, for: .normal)
         nextButton.layer.cornerRadius = 10
         
-        nextButton.snp.makeConstraints{ (make) in
-            make.centerX.equalTo(self.view)
-            make.bottomMargin.equalTo(-50)
+        nextButton.snp.makeConstraints{
+            $0.centerX.equalTo(contentScrollView)
+            $0.bottom.equalTo(contentScrollView).offset(50)
         }
         
         self.nextButton.addTarget(self, action: #selector(moveToNextView), for: .touchUpInside)
@@ -81,9 +102,9 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDe
 {
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) // 레이아웃 조절
     {
-        self.FSCalender.snp.updateConstraints{ (make) in
-            make.height.equalTo(bounds.height)
-            make.centerX.equalTo(self.view)
+        self.FSCalender.snp.updateConstraints{
+            $0.height.equalTo(bounds.height)
+            $0.centerX.equalTo(contentScrollView)
         }
         
         self.view.layoutIfNeeded()

@@ -18,15 +18,11 @@ SourceTree 원격 url 확인 - https://<토큰 값>@github.com/<사용자명>/<�
 
 </br>
 
-# <div align="center"> Use Extension </div>
+# <div align="center"> Using Snapkit </div>
 </br>
 
-저장 프로퍼티(Stored Property) X
-연산 프로퍼티(Computed Property) O
-
-ex) 
-extension Int {
-    var half: Int {
-        return self / 2
-    }
+let view = UIView() </br>
+view.snp.makeConstraints{ </br>
+    $0.top.bottom.leading.trailing.equalToSuperView() </br>
+    -> 한번에 여러개 가능 </br>
 } 

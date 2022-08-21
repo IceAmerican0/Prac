@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     fileprivate weak var FSCalender : FSCalendar!
     
     private var nextButton = UIButton()
+    private var customCollectionView : CustomCollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,17 +27,20 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .white
         
         self.view.addSubview(contentScrollView)
-        contentScrollView.addSubview(nextButton)
         
         let fsCalendar = FSCalendar(frame: CGRect(x: 0, y: 50, width: mainViewBounds.width, height: 300))
         fsCalendar.dataSource = self
         fsCalendar.delegate = self
-        
-        contentScrollView.addSubview(fsCalendar)
         self.FSCalender = fsCalendar
+        
+        contentScrollView.addSubview(nextButton)
+        contentScrollView.addSubview(fsCalendar)
+        contentScrollView.addSubview(customCollectionView)
         
         setLayouts()
     }
+    
+    // MARK: Layout
     
     func setLayouts()
     {
@@ -86,6 +90,23 @@ class ViewController: UIViewController {
 
 
 }
+
+// MARK: CollectionView
+
+class CustomCollectionView : UICollectionView {
+    
+}
+
+class CollectionViewCell : UICollectionViewCell {
+    
+    
+    func setUpCell()
+    {
+        
+    }
+}
+
+// MARK: Extension
 
 extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate {
     override public func viewDidLoad() {

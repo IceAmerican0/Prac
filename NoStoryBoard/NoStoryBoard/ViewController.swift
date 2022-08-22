@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     private var nextButton = UIButton()
     private var customCollectionView : CustomCollectionView!
+    
+    var selectedDate : String
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,7 +139,7 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDe
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        let selectedDate = date.setTodayDate(selected: date)
-        GetUrlSessionData(selectedDate : selectedDate)
+        selectedDate = date.setTodayDate(selected: date)
+        GetUrlSessionData(onCompleted: selectedDate)
     }
 }

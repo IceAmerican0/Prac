@@ -9,20 +9,37 @@ import Foundation
 
 struct responseJsonData : Codable {
     
-    var rounding_date : String? = ""
-    var teeoff_time : String? = ""
-    var out_course_name : String? = ""
-    var teeoff_no : String? = ""
-    var team_name : String? = ""
+    let rounding_date : String
+    let teeoff_time : String
+    let out_course_name : String
+    let teeoff_no : String
+    let team_name : String
     
-    var players : [Players]
+    let players : [Players]
+    
+    enum CodingKyes: String, CodingKey {
+        case rounding_date
+        case teeoff_time
+        case out_course_name
+        case teeoff_no
+        case team_name
+        case players
+    }
     
 }
 
 struct Players : Codable {
-    var name : String? = ""
-    var memno : String? = ""
-    var gmemno : String? = ""
-    var gender : String? = ""
-    var member : String? = ""
+    let name : String
+    let memno : String
+    let gmemno : String
+    let gender : String
+    let member : String
+    
+    enum CodingKes: String, CodingKey {
+        case name
+        case memno
+        case gmemno
+        case gender
+        case member
+    }
 }

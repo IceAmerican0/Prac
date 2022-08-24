@@ -26,3 +26,8 @@ view.snp.makeConstraints{ </br>
     $0.top.bottom.leading.trailing.equalToSuperView() </br>
     -> 한번에 여러개 가능 </br>
 } 
+</br></br>
+# <div align="center"> MVVM </div>
+
+<img width="450" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FOwzzZ%2FbtqARwRQICN%2FcVfDt48KVNpEZEASIjoMq0%2Fimg.png">
+

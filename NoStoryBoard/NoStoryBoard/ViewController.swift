@@ -140,6 +140,5 @@ extension ViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDe
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         selectedDate = date.setTodayDate(selected: date)
-        GetUrlSessionData(onCompleted: selectedDate)
     }
 }

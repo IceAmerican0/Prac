@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     private var nextButton = UIButton()
     private var customCollectionView : CustomCollectionView!
     
-    var selectedDate : String
+    var selectedDate : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()

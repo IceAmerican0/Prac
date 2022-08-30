@@ -31,3 +31,11 @@ view.snp.makeConstraints{ </br>
 
 <img width="450" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FOwzzZ%2FbtqARwRQICN%2FcVfDt48KVNpEZEASIjoMq0%2Fimg.png">
 
+</br>
+Model = 앱에서 사용할 데이터 </br>
+Entity = 서버로부터 가져올 데이터 </br>
+Repository = Entity 전달 </br>
+Service = Repository를 통해 Entity -> Model 변환 (state, logic 포함한 핵심) </br>
+ViewModel = Service를 통해 Model -> viewModel 변환 </br>
+ViewController = ViewModel을 통해 화면 세팅 </br>
+ 

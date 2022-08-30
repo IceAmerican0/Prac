@@ -1,13 +1,13 @@
 //
-//  ResponseJsonData.swift
+//  Entity.swift
 //  NoStoryBoard
 //
-//  Created by 박성준 on 2022/08/03.
+//  Created by 박성준 on 2022/08/30.
 //
 
 import Foundation
 
-struct responseJsonData : Codable {
+struct ResponseModel : Codable {
     
     let rounding_date : String
     let teeoff_time : String

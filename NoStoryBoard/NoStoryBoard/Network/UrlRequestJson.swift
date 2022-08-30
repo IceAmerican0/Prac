@@ -11,7 +11,7 @@ class UrlRequestJson
 {
     public func GetUrlSessionData(onCompleted: @escaping (Date) -> Void)
     {
-        let urlComponent = URLComponents(string:"https://www.urigolfclub.co.kr//score_api/visit_list.aspx?date=\("")")
+        let urlComponent = URLComponents(string:"")
         
         Swift.print("\n==============\nrequestUrl : \(String(describing: urlComponent))\n===================")
         

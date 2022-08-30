@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69077F9A289AA04800D79DCB /* ResponseJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69077F99289AA04800D79DCB /* ResponseJsonData.swift */; };
 		69077F9C289AA5F500D79DCB /* UrlRequestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69077F9B289AA5F500D79DCB /* UrlRequestJson.swift */; };
 		69077F9F289AAAEC00D79DCB /* Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69077F9E289AAAEC00D79DCB /* Names.swift */; };
 		69077FB428A1369100D79DCB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69077FB328A1369100D79DCB /* Date+Extension.swift */; };
@@ -20,6 +19,11 @@
 		693650B228BCDE9A0049884C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 693650B128BCDE9A0049884C /* RxRelay */; };
 		693650B428BCDE9A0049884C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 693650B328BCDE9A0049884C /* RxSwift */; };
 		693650B628BCDE9A0049884C /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 693650B528BCDE9A0049884C /* RxTest */; };
+		693650B828BE2A510049884C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693650B728BE2A510049884C /* Entity.swift */; };
+		693650BA28BE2A600049884C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693650B928BE2A600049884C /* Repository.swift */; };
+		693650BC28BE2A6B0049884C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693650BB28BE2A6B0049884C /* ViewModel.swift */; };
+		693650BE28BE2A800049884C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693650BD28BE2A800049884C /* Model.swift */; };
+		693650C028BE2A890049884C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693650BF28BE2A890049884C /* Service.swift */; };
 		6971349A2886E50200ACE7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697134992886E50200ACE7FB /* AppDelegate.swift */; };
 		6971349C2886E50200ACE7FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971349B2886E50200ACE7FB /* SceneDelegate.swift */; };
 		6971349E2886E50200ACE7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971349D2886E50200ACE7FB /* ViewController.swift */; };
@@ -29,11 +33,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69077F99289AA04800D79DCB /* ResponseJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseJsonData.swift; sourceTree = "<group>"; };
 		69077F9B289AA5F500D79DCB /* UrlRequestJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRequestJson.swift; sourceTree = "<group>"; };
 		69077F9E289AAAEC00D79DCB /* Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Names.swift; sourceTree = "<group>"; };
 		69077FB328A1369100D79DCB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		69077FB528A13B1600D79DCB /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		693650B728BE2A510049884C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		693650B928BE2A600049884C /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		693650BB28BE2A6B0049884C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		693650BD28BE2A800049884C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		693650BF28BE2A890049884C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		697134962886E50200ACE7FB /* NoStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697134992886E50200ACE7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6971349B2886E50200ACE7FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +74,6 @@
 		69077F98289AA00800D79DCB /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				69077F99289AA04800D79DCB /* ResponseJsonData.swift */,
 				69077F9B289AA5F500D79DCB /* UrlRequestJson.swift */,
 			);
 			path = Network;
@@ -105,8 +112,13 @@
 				697134AF288EBD1E00ACE7FB /* Extensions */,
 				697134992886E50200ACE7FB /* AppDelegate.swift */,
 				6971349B2886E50200ACE7FB /* SceneDelegate.swift */,
-				6971349D2886E50200ACE7FB /* ViewController.swift */,
 				697134AD28883D4B00ACE7FB /* TableViewController.swift */,
+				6971349D2886E50200ACE7FB /* ViewController.swift */,
+				693650BB28BE2A6B0049884C /* ViewModel.swift */,
+				693650BF28BE2A890049884C /* Service.swift */,
+				693650BD28BE2A800049884C /* Model.swift */,
+				693650B928BE2A600049884C /* Repository.swift */,
+				693650B728BE2A510049884C /* Entity.swift */,
 				697134A22886E50300ACE7FB /* Assets.xcassets */,
 				697134A42886E50300ACE7FB /* LaunchScreen.storyboard */,
 				697134A72886E50300ACE7FB /* Info.plist */,
@@ -209,13 +221,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				69077FB428A1369100D79DCB /* Date+Extension.swift in Sources */,
+				693650C028BE2A890049884C /* Service.swift in Sources */,
 				69077F9C289AA5F500D79DCB /* UrlRequestJson.swift in Sources */,
 				697134AE28883D4B00ACE7FB /* TableViewController.swift in Sources */,
 				69077FB628A13B1600D79DCB /* Functions.swift in Sources */,
 				69077F9F289AAAEC00D79DCB /* Names.swift in Sources */,
+				693650BA28BE2A600049884C /* Repository.swift in Sources */,
+				693650BE28BE2A800049884C /* Model.swift in Sources */,
 				6971349E2886E50200ACE7FB /* ViewController.swift in Sources */,
-				69077F9A289AA04800D79DCB /* ResponseJsonData.swift in Sources */,
+				693650B828BE2A510049884C /* Entity.swift in Sources */,
 				6971349A2886E50200ACE7FB /* AppDelegate.swift in Sources */,
+				693650BC28BE2A6B0049884C /* ViewModel.swift in Sources */,
 				6971349C2886E50200ACE7FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

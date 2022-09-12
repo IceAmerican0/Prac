@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Repository에서 받은 모델(데이터)을 화면에 보여줄 모델(데이터)로 변환
 class Service {
     let repository = Repository()
     

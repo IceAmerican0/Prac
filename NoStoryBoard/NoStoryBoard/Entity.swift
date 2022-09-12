@@ -7,6 +7,7 @@
 
 import Foundation
 
+// 서버로부터 온 모델(데이터)
 struct ResponseModel : Codable {
     
     let rounding_date : String

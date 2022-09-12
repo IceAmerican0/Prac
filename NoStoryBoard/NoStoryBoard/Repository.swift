@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+// 서버로부터 온 모델 Entity 전달
 class Repository {
     func fetch(onCompleted: @escaping (ResponseModel) -> Void) {
         let url = "https://www.urigolfclub.co.kr//score_api/visit_list.aspx?date=\("")"

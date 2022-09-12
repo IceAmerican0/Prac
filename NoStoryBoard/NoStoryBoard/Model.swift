@@ -7,6 +7,7 @@
 
 import Foundation
 
+// 화면에 보여줄 모델(데이터)
 struct Model {
     var responseData : String
 }

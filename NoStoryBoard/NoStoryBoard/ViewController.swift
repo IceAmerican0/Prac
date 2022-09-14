@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import FSCalendar
 
+// ViewModel 이용한 화면 세팅
 class ViewController: UIViewController {
     
     fileprivate weak var FSCalender : FSCalendar!

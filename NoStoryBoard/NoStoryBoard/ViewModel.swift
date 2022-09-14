@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Service를 불러와 화면에 띄워줌
+// Service를 불러와 Model -> viewModel 변환
 class ViewModel {
     var onUpdated: () -> Void = {}
     

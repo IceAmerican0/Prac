@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  toy
+//  Toy
 //
-//  Created by 박성준 on 2023/02/01.
+//  Created by 박성준 on 2023/02/05.
 //
 
 import UIKit
@@ -13,16 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        window = UIWindow(windowScene: windowScene)
-        
-         // NavigationController 설정
-        let navigationVC = UINavigationController(rootViewController: testViewController())
-        window?.rootViewController = navigationVC
-        
-        window?.makeKeyAndVisible()
+        guard let _ = (scene as? UIWindowScene) else { return }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

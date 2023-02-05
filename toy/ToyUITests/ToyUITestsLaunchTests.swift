@@ -1,13 +1,13 @@
 //
-//  toyUITestsLaunchTests.swift
-//  toyUITests
+//  ToyUITestsLaunchTests.swift
+//  ToyUITests
 //
-//  Created by 박성준 on 2023/02/01.
+//  Created by 박성준 on 2023/02/05.
 //
 
 import XCTest
 
-final class toyUITestsLaunchTests: XCTestCase {
+final class ToyUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,34 +1,34 @@
 //
-//  testInteractor.swift
-//  toy
+//  LoginInteractor.swift
+//  Toy
 //
-//  Created by 박성준 on 2023/02/01.
+//  Created by 박성준 on 2023/02/05.
 //
 
 import RIBs
 import RxSwift
 
-protocol testRouting: ViewableRouting {
+protocol LoginRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
 }
 
-protocol testPresentable: Presentable {
-    var listener: testPresentableListener? { get set }
+protocol LoginPresentable: Presentable {
+    var listener: LoginPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 
-protocol testListener: AnyObject {
+protocol LoginListener: AnyObject {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class testInteractor: PresentableInteractor<testPresentable>, testInteractable, testPresentableListener {
+final class LoginInteractor: PresentableInteractor<LoginPresentable>, LoginInteractable, LoginPresentableListener {
 
-    weak var router: testRouting?
-    weak var listener: testListener?
+    weak var router: LoginRouting?
+    weak var listener: LoginListener?
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
-    override init(presenter: testPresentable) {
+    override init(presenter: LoginPresentable) {
         super.init(presenter: presenter)
         presenter.listener = self
     }

@@ -61,3 +61,14 @@ Presenter(Optional) - Buisness Model을 ViewModel 또는 그 반대로 변환. �
 </br>
 View(Controller)(Optional) - UI Build / Update
 </br>
+
+</br></br>
+# <div align="center"> RxSwift </div>
+</br>
+Rx = Reactive Extension
+</br>
+Observable - asynchrous sequence, 일정 기간 동안 계속해서 이벤트 생성(방출)
+</br>
+Operator - 
+</br>
+Schedulers -

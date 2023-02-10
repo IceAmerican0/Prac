@@ -1,3 +1,10 @@
+# <div align="center"> Study </div>
+1. https://swiftbysundell.com/
+2. https://www.hackingwithswift.com/
+3. https://howtoinswift.tech/
+
+</br>
+
 # <div align="center"> 403 Error push 오류 </div>
 </br>
 
@@ -26,7 +33,8 @@ view.snp.makeConstraints{ </br>
     $0.top.bottom.leading.trailing.equalToSuperView() </br>
     -> 한번에 여러개 가능 </br>
 } 
-</br></br>
+</br>
+
 # <div align="center"> MVVM </div>
 
 <div align="center">

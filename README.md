@@ -77,9 +77,9 @@ Rx = Reactive Extension
 </br>
 Observable - asynchrous sequence, 일정 기간 동안 계속해서 이벤트 생성(방출)
 </br>
-Operator - 
+Operator - ObservableType과 Observable 클래스에는 복잡한 논리를 구현하기 위해 많은 메서드가 포함 - 이 메서드들을 Operator라고 부름
 </br>
-Schedulers -
+Schedulers - like Dispatch Queue
 
 </br></br>
 # <div align="center"> Combine </div>

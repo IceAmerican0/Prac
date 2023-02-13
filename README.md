@@ -73,6 +73,7 @@ View(Controller)(Optional) - UI Build / Update
 </br></br>
 # <div align="center"> RxSwift </div>
 </br>
+
 Rx = Reactive Extension
 </br>
 Observable - asynchrous sequence, 일정 기간 동안 계속해서 이벤트 생성(방출)
@@ -84,3 +85,7 @@ Schedulers - like Dispatch Queue
 </br></br>
 # <div align="center"> Combine </div>
 </br>
+
+1. Publishers - 하나 이상의 대상에게 시간이 지남에 따라 값을 방출할 수 있는 유형
+2. Operators - Publisher protocol로 선언된 method이며, 선언된 Publishers와 동일하거나 새로운 Publishers로 반환
+3. Subscribers - 모든 구독은 subscriber와 함께 종료됨. Subscribers는 일반적으로 방출된 값 또는 완료 이벤트를 통해 "무언가"를 하는 역할

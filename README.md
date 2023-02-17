@@ -65,7 +65,7 @@ Builder - RIB의 각 구성요소를 위한 Builder 인스턴스화
 </br>
 Component - RIB 외부 종속성에 대한 접근 제공 / 자체 종속성 소유 / 다른 RIB에서 이에 대한 접근 제어 (부모 RIB의 Component -> 자식 RIB Builder에 주입)
 </br>
-Presenter(Optional) - Buisness Model을 ViewModel 또는 그 반대로 변환. 생략시 View or Interactor의 책임으로
+Presenter(Optional) - Buisness Model을 ViewModel 또는 그 반대로 변환. 생략시 View or Interactor의 책임
 </br>
 View(Controller)(Optional) - UI Build / Update
 </br>

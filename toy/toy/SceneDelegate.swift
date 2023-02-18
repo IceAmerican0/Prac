@@ -2,10 +2,11 @@
 //  SceneDelegate.swift
 //  Toy
 //
-//  Created by 박성준 on 2023/02/05.
+//  Created by 박성준 on 2023/02/18.
 //
 
 import UIKit
+import RIBs
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,6 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

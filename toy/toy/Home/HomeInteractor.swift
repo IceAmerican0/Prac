@@ -1,34 +1,34 @@
 //
-//  LoggedOutInteractor.swift
-//  NoStoryBoard
+//  HomeInteractor.swift
+//  Toy
 //
-//  Created by 박성준 on 2022/10/11.
+//  Created by 박성준 on 2023/02/19.
 //
 
 import RIBs
 import RxSwift
 
-protocol LoggedOutRouting: ViewableRouting {
+protocol HomeRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
 }
 
-protocol LoggedOutPresentable: Presentable {
-    var listener: LoggedOutPresentableListener? { get set }
+protocol HomePresentable: Presentable {
+    var listener: HomePresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 
-protocol LoggedOutListener: AnyObject {
+protocol HomeListener: AnyObject {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class LoggedOutInteractor: PresentableInteractor<LoggedOutPresentable>, LoggedOutInteractable, LoggedOutPresentableListener {
+final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteractable, HomePresentableListener {
 
-    weak var router: LoggedOutRouting?
-    weak var listener: LoggedOutListener?
+    weak var router: HomeRouting?
+    weak var listener: HomeListener?
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
-    override init(presenter: LoggedOutPresentable) {
+    override init(presenter: HomePresentable) {
         super.init(presenter: presenter)
         presenter.listener = self
     }

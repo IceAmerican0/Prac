@@ -13,8 +13,15 @@ protocol RootDependency: Dependency {
 }
 
 final class RootComponent: Component<RootDependency> {
+    
+}
 
-    // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
+protocol RootDependencyMain: Dependency {
+    
+}
+
+extension RootComponent: HomeDependency {
+    
 }
 
 // MARK: - Builder
@@ -33,8 +40,8 @@ final class RootBuilder: Builder<RootDependency>, RootBuildable {
         let component = RootComponent(dependency: dependency)
         let viewController = RootViewController()
         let interactor = RootInteractor(presenter: viewController)
-        let mainBuilder = MainBuilder(dependency: component as! MainDependency)
         
-        return RootRouter(interactor: interactor, viewController: viewController, MainBuilder: mainBuilder) as! LaunchRouting
+        let homeBuilder = HomeBuilder(dependency: component)
+        return RootRouter(interactor: interactor, viewController: viewController, homeBuilder: homeBuilder)
     }
 }

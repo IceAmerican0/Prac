@@ -13,16 +13,16 @@
 		697D240229A0A5B6008BAA90 /* ToyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D240129A0A5B6008BAA90 /* ToyTests.swift */; };
 		697D240C29A0A5B6008BAA90 /* ToyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D240B29A0A5B6008BAA90 /* ToyUITests.swift */; };
 		697D240E29A0A5B6008BAA90 /* ToyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D240D29A0A5B6008BAA90 /* ToyUITestsLaunchTests.swift */; };
-		697D241F29A0A5E6008BAA90 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D241B29A0A5E6008BAA90 /* MainRouter.swift */; };
-		697D242029A0A5E6008BAA90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D241C29A0A5E6008BAA90 /* MainViewController.swift */; };
-		697D242129A0A5E6008BAA90 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D241D29A0A5E6008BAA90 /* MainBuilder.swift */; };
-		697D242229A0A5E6008BAA90 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D241E29A0A5E6008BAA90 /* MainInteractor.swift */; };
 		697D242529A0A7B7008BAA90 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 697D242429A0A7B7008BAA90 /* RIBs */; };
 		697D242729A0B061008BAA90 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D242629A0B061008BAA90 /* AppComponent.swift */; };
 		697D242D29A0B131008BAA90 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D242929A0B131008BAA90 /* RootRouter.swift */; };
 		697D242E29A0B131008BAA90 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D242A29A0B131008BAA90 /* RootViewController.swift */; };
 		697D242F29A0B131008BAA90 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D242B29A0B131008BAA90 /* RootBuilder.swift */; };
 		697D243029A0B131008BAA90 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D242C29A0B131008BAA90 /* RootInteractor.swift */; };
+		697D243629A1EBB6008BAA90 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D243229A1EBB6008BAA90 /* HomeRouter.swift */; };
+		697D243729A1EBB6008BAA90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D243329A1EBB6008BAA90 /* HomeViewController.swift */; };
+		697D243829A1EBB6008BAA90 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D243429A1EBB6008BAA90 /* HomeBuilder.swift */; };
+		697D243929A1EBB6008BAA90 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D243529A1EBB6008BAA90 /* HomeInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,15 +53,15 @@
 		697D240729A0A5B6008BAA90 /* ToyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		697D240B29A0A5B6008BAA90 /* ToyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyUITests.swift; sourceTree = "<group>"; };
 		697D240D29A0A5B6008BAA90 /* ToyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		697D241B29A0A5E6008BAA90 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		697D241C29A0A5E6008BAA90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		697D241D29A0A5E6008BAA90 /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
-		697D241E29A0A5E6008BAA90 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		697D242629A0B061008BAA90 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		697D242929A0B131008BAA90 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		697D242A29A0B131008BAA90 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		697D242B29A0B131008BAA90 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
 		697D242C29A0B131008BAA90 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		697D243229A1EBB6008BAA90 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		697D243329A1EBB6008BAA90 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		697D243429A1EBB6008BAA90 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		697D243529A1EBB6008BAA90 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				697D23EA29A0A5B5008BAA90 /* AppDelegate.swift */,
 				697D23EC29A0A5B5008BAA90 /* SceneDelegate.swift */,
 				697D242829A0B121008BAA90 /* Root */,
-				697D241A29A0A5CB008BAA90 /* Main */,
+				697D243129A1EB2C008BAA90 /* Home */,
 				697D23F329A0A5B6008BAA90 /* Assets.xcassets */,
 				697D23F829A0A5B6008BAA90 /* Info.plist */,
 			);
@@ -141,17 +141,6 @@
 			path = ToyUITests;
 			sourceTree = "<group>";
 		};
-		697D241A29A0A5CB008BAA90 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				697D241B29A0A5E6008BAA90 /* MainRouter.swift */,
-				697D241C29A0A5E6008BAA90 /* MainViewController.swift */,
-				697D241D29A0A5E6008BAA90 /* MainBuilder.swift */,
-				697D241E29A0A5E6008BAA90 /* MainInteractor.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		697D242829A0B121008BAA90 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +150,17 @@
 				697D242C29A0B131008BAA90 /* RootInteractor.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		697D243129A1EB2C008BAA90 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				697D243229A1EBB6008BAA90 /* HomeRouter.swift */,
+				697D243329A1EBB6008BAA90 /* HomeViewController.swift */,
+				697D243429A1EBB6008BAA90 /* HomeBuilder.swift */,
+				697D243529A1EBB6008BAA90 /* HomeInteractor.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,16 +299,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				697D242D29A0B131008BAA90 /* RootRouter.swift in Sources */,
+				697D243929A1EBB6008BAA90 /* HomeInteractor.swift in Sources */,
 				697D23EB29A0A5B5008BAA90 /* AppDelegate.swift in Sources */,
+				697D243829A1EBB6008BAA90 /* HomeBuilder.swift in Sources */,
 				697D243029A0B131008BAA90 /* RootInteractor.swift in Sources */,
 				697D242E29A0B131008BAA90 /* RootViewController.swift in Sources */,
 				697D23ED29A0A5B5008BAA90 /* SceneDelegate.swift in Sources */,
+				697D243729A1EBB6008BAA90 /* HomeViewController.swift in Sources */,
+				697D243629A1EBB6008BAA90 /* HomeRouter.swift in Sources */,
 				697D242729A0B061008BAA90 /* AppComponent.swift in Sources */,
-				697D241F29A0A5E6008BAA90 /* MainRouter.swift in Sources */,
-				697D242029A0A5E6008BAA90 /* MainViewController.swift in Sources */,
 				697D242F29A0B131008BAA90 /* RootBuilder.swift in Sources */,
-				697D242129A0A5E6008BAA90 /* MainBuilder.swift in Sources */,
-				697D242229A0A5E6008BAA90 /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +471,8 @@
 				INFOPLIST_FILE = Toy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,7 +500,8 @@
 				INFOPLIST_FILE = Toy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

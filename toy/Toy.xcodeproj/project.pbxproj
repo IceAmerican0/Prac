@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6973C75029A3A788007FF27D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6973C74F29A3A788007FF27D /* SnapKit */; };
+		6973C75329A3A926007FF27D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 6973C75229A3A926007FF27D /* Then */; };
+		6973C75929A3AF63007FF27D /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973C75529A3AF63007FF27D /* LoginRouter.swift */; };
+		6973C75A29A3AF63007FF27D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973C75629A3AF63007FF27D /* LoginViewController.swift */; };
+		6973C75B29A3AF63007FF27D /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973C75729A3AF63007FF27D /* LoginBuilder.swift */; };
+		6973C75C29A3AF63007FF27D /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973C75829A3AF63007FF27D /* LoginInteractor.swift */; };
 		697D23EB29A0A5B5008BAA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D23EA29A0A5B5008BAA90 /* AppDelegate.swift */; };
 		697D23ED29A0A5B5008BAA90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D23EC29A0A5B5008BAA90 /* SceneDelegate.swift */; };
 		697D23F429A0A5B6008BAA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697D23F329A0A5B6008BAA90 /* Assets.xcassets */; };
@@ -43,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6973C75529A3AF63007FF27D /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		6973C75629A3AF63007FF27D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6973C75729A3AF63007FF27D /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		6973C75829A3AF63007FF27D /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		697D23E729A0A5B5008BAA90 /* Toy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697D23EA29A0A5B5008BAA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		697D23EC29A0A5B5008BAA90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +80,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				697D242529A0A7B7008BAA90 /* RIBs in Frameworks */,
+				6973C75329A3A926007FF27D /* Then in Frameworks */,
+				6973C75029A3A788007FF27D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6973C75429A3AF0C007FF27D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6973C75529A3AF63007FF27D /* LoginRouter.swift */,
+				6973C75629A3AF63007FF27D /* LoginViewController.swift */,
+				6973C75729A3AF63007FF27D /* LoginBuilder.swift */,
+				6973C75829A3AF63007FF27D /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		697D23DE29A0A5B5008BAA90 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +141,7 @@
 				697D23EC29A0A5B5008BAA90 /* SceneDelegate.swift */,
 				697D242829A0B121008BAA90 /* Root */,
 				697D243129A1EB2C008BAA90 /* Home */,
+				6973C75429A3AF0C007FF27D /* Login */,
 				697D23F329A0A5B6008BAA90 /* Assets.xcassets */,
 				697D23F829A0A5B6008BAA90 /* Info.plist */,
 			);
@@ -181,6 +205,8 @@
 			name = Toy;
 			packageProductDependencies = (
 				697D242429A0A7B7008BAA90 /* RIBs */,
+				6973C74F29A3A788007FF27D /* SnapKit */,
+				6973C75229A3A926007FF27D /* Then */,
 			);
 			productName = Toy;
 			productReference = 697D23E729A0A5B5008BAA90 /* Toy.app */;
@@ -256,6 +282,8 @@
 			mainGroup = 697D23DE29A0A5B5008BAA90;
 			packageReferences = (
 				697D242329A0A7B7008BAA90 /* XCRemoteSwiftPackageReference "RIBs" */,
+				6973C74E29A3A788007FF27D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6973C75129A3A926007FF27D /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 697D23E829A0A5B5008BAA90 /* Products */;
 			projectDirPath = "";
@@ -300,14 +328,18 @@
 			files = (
 				697D242D29A0B131008BAA90 /* RootRouter.swift in Sources */,
 				697D243929A1EBB6008BAA90 /* HomeInteractor.swift in Sources */,
+				6973C75929A3AF63007FF27D /* LoginRouter.swift in Sources */,
 				697D23EB29A0A5B5008BAA90 /* AppDelegate.swift in Sources */,
 				697D243829A1EBB6008BAA90 /* HomeBuilder.swift in Sources */,
 				697D243029A0B131008BAA90 /* RootInteractor.swift in Sources */,
 				697D242E29A0B131008BAA90 /* RootViewController.swift in Sources */,
 				697D23ED29A0A5B5008BAA90 /* SceneDelegate.swift in Sources */,
+				6973C75C29A3AF63007FF27D /* LoginInteractor.swift in Sources */,
 				697D243729A1EBB6008BAA90 /* HomeViewController.swift in Sources */,
+				6973C75B29A3AF63007FF27D /* LoginBuilder.swift in Sources */,
 				697D243629A1EBB6008BAA90 /* HomeRouter.swift in Sources */,
 				697D242729A0B061008BAA90 /* AppComponent.swift in Sources */,
+				6973C75A29A3AF63007FF27D /* LoginViewController.swift in Sources */,
 				697D242F29A0B131008BAA90 /* RootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,6 +667,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6973C74E29A3A788007FF27D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		6973C75129A3A926007FF27D /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		697D242329A0A7B7008BAA90 /* XCRemoteSwiftPackageReference "RIBs" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uber/RIBs";
@@ -646,6 +694,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6973C74F29A3A788007FF27D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6973C74E29A3A788007FF27D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		6973C75229A3A926007FF27D /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6973C75129A3A926007FF27D /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		697D242429A0A7B7008BAA90 /* RIBs */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 697D242329A0A7B7008BAA90 /* XCRemoteSwiftPackageReference "RIBs" */;

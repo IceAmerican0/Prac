@@ -1,34 +1,34 @@
 //
-//  HomeInteractor.swift
+//  LoginInteractor.swift
 //  Toy
 //
-//  Created by 박성준 on 2023/02/19.
+//  Created by 박성준 on 2023/02/20.
 //
 
 import RIBs
 import RxSwift
 
-protocol HomeRouting: ViewableRouting {
+protocol LoginRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
 }
 
-protocol HomePresentable: Presentable {
-    var listener: HomePresentableListener? { get set }
+protocol LoginPresentable: Presentable {
+    var listener: LoginPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 
-protocol HomeListener: AnyObject {
+protocol LoginListener: AnyObject {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteractable, HomePresentableListener {
+final class LoginInteractor: PresentableInteractor<LoginPresentable>, LoginInteractable, LoginPresentableListener {
 
-    weak var router: HomeRouting?
-    weak var listener: HomeListener?
+    weak var router: LoginRouting?
+    weak var listener: LoginListener?
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
-    override init(presenter: HomePresentable) {
+    override init(presenter: LoginPresentable) {
         super.init(presenter: presenter)
         presenter.listener = self
     }
@@ -41,11 +41,5 @@ final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteract
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
-    }
-    
-    // MARK: - MainPresentableListener
-    
-    func moveToLogin() {
-        
     }
 }

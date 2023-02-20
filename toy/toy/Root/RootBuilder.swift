@@ -16,7 +16,7 @@ final class RootComponent: Component<RootDependency> {
     
 }
 
-protocol RootDependencyMain: Dependency {
+protocol RootDependencyHome: Dependency {
     
 }
 

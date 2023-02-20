@@ -25,17 +25,20 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
-
     
     override func didLoad() {
         super.didLoad()
         
+        routeToHome()
+    }
+    
+    private let homeBuilder: HomeBuildable
+    private var home: ViewableRouting?
+    
+    private func routeToHome() {
         let home = homeBuilder.build(withListener: interactor)
         self.home = home
         attachChild(home)
         viewController.present(viewController: home.viewControllable)
     }
-    
-    private let homeBuilder: HomeBuildable
-    private var home: ViewableRouting?
 }

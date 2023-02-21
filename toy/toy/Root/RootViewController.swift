@@ -35,7 +35,8 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
     }
     
     func present(viewController: RIBs.ViewControllable) {
-        present(viewController.uiviewController, animated: true, completion: nil)
+        viewController.uiviewController.modalPresentationStyle = .fullScreen
+        present(viewController.uiviewController, animated: false, completion: nil)
     }
     
 }

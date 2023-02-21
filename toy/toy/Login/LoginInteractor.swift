@@ -42,4 +42,8 @@ final class LoginInteractor: PresentableInteractor<LoginPresentable>, LoginInter
         super.willResignActive()
         // TODO: Pause any business logic.
     }
+    
+    func Login(ID: String?, PW: String?) {
+        
+    }
 }

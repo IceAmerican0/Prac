@@ -43,13 +43,20 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
             $0.setTitle("Login", for: .normal)
             $0.setTitleColor(UIColor.black, for: .normal)
             $0.backgroundColor = UIColor.white
+            view.addSubview($0)
+            
+            $0.snp.makeConstraints { make in
+                make.centerX.centerY.equalTo(view)
+                make.width.height.equalTo(100)
+            }
+            
         }
-        view.addSubview(loginButton)
         
-        loginButton.snp.makeConstraints { make in
-            make.centerX.centerY.equalTo(view)
-            make.width.height.equalTo(100)
-        }
+        
+    }
+    
+    func present(viewController: ViewControllable) {
+        present(viewController.uiviewController, animated: true, completion: nil)
     }
     
 }

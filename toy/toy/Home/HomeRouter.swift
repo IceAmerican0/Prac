@@ -13,7 +13,7 @@ protocol HomeInteractable: Interactable {
 }
 
 protocol HomeViewControllable: ViewControllable {
-    // TODO: Declare methods the router invokes to manipulate the view hierarchy.
+    func present(viewController: ViewControllable)
 }
 
 final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable>, HomeRouting {

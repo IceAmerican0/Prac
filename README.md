@@ -91,5 +91,6 @@ https://www.vadimbulavin.com/swift-combine-framework-tutorial-getting-started/
 # <div align="center"> Note </div>
 </br>
 
+use buttonArray
 1. removeTarget(nil, action: nil, for: .allEvents)
 2. addTarget(self, action: #selector(pressNumber(_:)), for: .touchUpInside) -> @objc func pressNumber(_ sender: button)

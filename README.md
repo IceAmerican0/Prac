@@ -65,7 +65,6 @@ Link : https://github.com/uber/RIBs
 # <div align="center"> RxSwift </div>
 </br>
 
-Rx = Reactive Extension
 </br>
 Observable - asynchrous sequence, 일정 기간 동안 계속해서 이벤트 생성(방출)
 </br>

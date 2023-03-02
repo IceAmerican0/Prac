@@ -1,10 +1,3 @@
-# <div align="center"> Study </div>
-1. https://swiftbysundell.com/
-2. https://www.hackingwithswift.com/
-3. https://howtoinswift.tech/
-
-</br>
-
 # <div align="center"> 403 Error push 오류 </div>
 </br>
 

@@ -12,25 +12,17 @@ import SnapKit
 import Then
 
 protocol HomePresentableListener: AnyObject {
-    func moveToLogin()
+    func moveToLoginView()
 }
 
 final class HomeViewController: UIViewController, HomePresentable, HomeViewControllable {
 
     weak var listener: HomePresentableListener?
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("Method is not supported")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.black
+        view.backgroundColor = UIColor.white
         buildLayouts()
     }
     
@@ -46,9 +38,11 @@ final class HomeViewController: UIViewController, HomePresentable, HomeViewContr
             view.addSubview($0)
             
             $0.snp.makeConstraints { make in
-                make.centerX.centerY.equalTo(view)
-                make.width.height.equalTo(100)
+                make.width.height.equalTo(50)
+                make.top.equalTo(view.safeAreaLayoutGuide)
+                make.trailing.equalTo(view).inset(20)
             }
+            
             
         }
         

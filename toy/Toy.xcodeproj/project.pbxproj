@@ -113,6 +113,16 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		69750F5929B300A000883A38 /* AppStarts */ = {
+			isa = PBXGroup;
+			children = (
+				697D242629A0B061008BAA90 /* AppComponent.swift */,
+				697D23EA29A0A5B5008BAA90 /* AppDelegate.swift */,
+				697D23EC29A0A5B5008BAA90 /* SceneDelegate.swift */,
+			);
+			path = AppStarts;
+			sourceTree = "<group>";
+		};
 		697D23DE29A0A5B5008BAA90 = {
 			isa = PBXGroup;
 			children = (
@@ -136,9 +146,7 @@
 		697D23E929A0A5B5008BAA90 /* Toy */ = {
 			isa = PBXGroup;
 			children = (
-				697D242629A0B061008BAA90 /* AppComponent.swift */,
-				697D23EA29A0A5B5008BAA90 /* AppDelegate.swift */,
-				697D23EC29A0A5B5008BAA90 /* SceneDelegate.swift */,
+				69750F5929B300A000883A38 /* AppStarts */,
 				697D242829A0B121008BAA90 /* Root */,
 				697D243129A1EB2C008BAA90 /* Home */,
 				6973C75429A3AF0C007FF27D /* Login */,

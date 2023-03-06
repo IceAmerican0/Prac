@@ -20,8 +20,6 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.white
     }
     
     func present(viewController: RIBs.ViewControllable) {

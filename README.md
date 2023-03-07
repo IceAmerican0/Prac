@@ -7,6 +7,18 @@ SourceTree 원격 url 확인 - https://<토큰 값>@github.com/<사용자명>/<�
 
 </br>
 
+# <div align="center"> Git 최신 Pull in Local Repository </div>
+</br>
+
+ - Push 해두었을때
+1. git reset --soft (분기전 브랜치 커밋)
+2. git stash (로컬에서 수정했던 푸시 따로 저장)
+3. git reset --hard origin/develop (메인 브랜치 최신으로 업데이트)
+4. git stash apply (로컬 수정사항 덮어씌우기)
+
+</br>
+
+
 # <div align="center"> Starting No_StoryBoard </div>
 </br>
 

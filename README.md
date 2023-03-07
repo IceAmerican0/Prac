@@ -67,19 +67,6 @@ View(Controller)(Optional) - UI Build / Update
 Link : https://github.com/uber/RIBs
 
 </br></br>
-# <div align="center"> RxSwift </div>
-</br>
-
-</br>
-Observable - asynchrous sequence, 일정 기간 동안 계속해서 이벤트 생성(방출)
-</br>
-Operator - ObservableType과 Observable 클래스에는 복잡한 논리를 구현하기 위해 많은 메서드가 포함 - 이 메서드들을 Operator라고 부름
-</br>
-Schedulers - like Dispatch Queue
-</br>
-Link : https://github.com/fimuxd/RxSwift
-
-</br></br>
 # <div align="center"> Combine </div>
 </br>
 

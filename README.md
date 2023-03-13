@@ -1,7 +1,5 @@
 # <div align="center"> 403 Error push 오류 </div>
 </br>
-https://pollen-port-115.notion.site/iOS-3-1d175b3c484b4408a523f975ff0b90a0
-https://stibee.com/api/v1.0/emails/share/hSckmYQEss_t4TF6dW0TpnR8DQLo7xs=
 
 GitHub - Setting - Developer Setting - Token 만료 확인 - 재생성
 

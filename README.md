@@ -63,17 +63,38 @@ Component - RIB 외부 종속성에 대한 접근 제공 / 자체 종속성 소�
 Presenter(Optional) - Buisness Model을 ViewModel 또는 그 반대로 변환. 생략시 View or Interactor의 책임
 </br>
 View(Controller)(Optional) - UI Build / Update
-</br>
+</br> </br>
 Link : https://github.com/uber/RIBs
 
-</br></br>
+</br>
+
+# <div align="center"> Concurrency </div>
+
+</br>
+
+1. async throws
+2. try await
+3. Continuation
+4. AsyncSequence / AsyncStream
+5. Actor
+6. Sendable
+
+</br>
+
 # <div align="center"> Combine </div>
+
 </br>
 
 1. Publishers - 하나 이상의 대상에게 시간이 지남에 따라 값을 방출할 수 있는 유형
 2. Operators - Publisher protocol로 선언된 method이며, 선언된 Publishers와 동일하거나 새로운 Publishers로 반환
 3. Subscribers - 모든 구독은 subscriber와 함께 종료됨. Subscribers는 일반적으로 방출된 값 또는 완료 이벤트를 통해 "무언가"를 하는 역할
+</br> 
+
+Concurrency > 비동기, 병렬 작업을 위한 기능
 </br>
+Combine > 비동기 이벤트로 변경되는 값의 변화에 대응하기 위한 프레임워크
+
+</br> </br>
 Link : https://github.com/fimuxd/Combine
 </br>
 https://www.vadimbulavin.com/swift-combine-framework-tutorial-getting-started/

@@ -1,12 +1,3 @@
-# <div align="center"> Starting No_StoryBoard </div>
-</br>
-
-1. 프로젝트 생성
-2. Main.storyboard 제거
-3. info.plist - Storyboard Name 삭제 ("-")
-4. Project Targets - General - Deployment Info - Main interface "Main" 삭제
-5. SceneDelegate.swift - windowScene 및 rootViewController 추가
-
 </br>
 
 # <div align="center"> MVVM </div>

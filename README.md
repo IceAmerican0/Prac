@@ -67,4 +67,3 @@ Combine > 비동기 이벤트로 변경되는 값의 변화에 대응하기 위�
 </br> </br>
 Link : https://github.com/fimuxd/Combine
 </br>
-https://www.vadimbulavin.com/swift-combine-framework-tutorial-getting-started/

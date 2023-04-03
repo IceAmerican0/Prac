@@ -43,11 +43,6 @@ Link : https://github.com/uber/RIBs
 <img width="700" src="https://d33wubrfki0l68.cloudfront.net/2d7c3c8c00eb2d3c3ac126c0fe78eb958d998c89/817d0/images/swiftui-data-flow-1.png">
 
 
-https://github.com/eunjin3786/SwiftUIPractice/blob/master/MD/5.%20State%20&%20Binding.md
-
-https://zeddios.tistory.com/964
-
-
 # Concurrency 
 
 
